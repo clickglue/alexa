@@ -1,0 +1,16 @@
+{
+    "remotePath": "./",
+    "host": "users.telenet.be",
+    "username": "v103286",
+    "password": "yD71n5",
+    "port": 21,
+    "protocol": "ftp",
+    "uploadOnSave": false,
+    "passive": false,
+    "debug": false,
+    "privateKeyPath": null,
+    "ignore": [
+        "\\.vscode",
+        "\\.git"
+    ]
+}
