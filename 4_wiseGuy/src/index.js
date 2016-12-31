@@ -28,29 +28,14 @@
 /**
  * App ID for the skill
  */
-var APP_ID = undefined;//replace with 'amzn1.echo-sdk-ams.app.[your-unique-value-here]';
+var APP_ID = "amzn1.ask.skill.47e3f376-0362-4253-a6bf-db4048c9214d";//replace with 'amzn1.echo-sdk-ams.app.[your-unique-value-here]';
 
 /**
  * Array containing knock knock jokes.
  */
 var JOKE_LIST = [
-    {setup: "To", speechPunchline: "Correct grammar is <break time=\"0.2s\" /> to whom.",
-        cardPunchline: "Correct grammar is 'to whom'."},
-    {setup: "Beets!", speechPunchline: "Beats me!", cardPunchline: "Beats me!"},
-    {setup: "Little Old Lady", speechPunchline: "I didn't know you could yodel!",
-        cardPunchline: "I didn't know you could yodel!"},
-    {setup: "A broken pencil", speechPunchline: "Never mind. It's pointless.",
-        cardPunchline: "Never mind. It's pointless."},
-    {setup: "Snow", speechPunchline: "Snow use. I forgot", cardPunchline: "Snow use. I forgot"},
-    {setup: "Boo", speechPunchline: "Aww <break time=\"0.3s\" /> it's okay <break time=\"0.3s\" /> don't cry.",
-        cardPunchline: "Aww, it's okay, don't cry."},
-    {setup: "Woo", speechPunchline: "Don't get so excited, it's just a joke",
-        cardPunchline: "Don't get so excited, it's just a joke"},
-    {setup: "Spell", speechPunchline: "<say-as interpret-as=\"characters\">who</say-as>",
-        cardPunchline: "w.h.o"},
-    {setup: "Atch", speechPunchline: "I didn't know you had a cold!", cardPunchline: "I didn't know you had a cold!"},
-    {setup: "Owls", speechPunchline: "Yes, they do.", cardPunchline: "Yes, they do."},
-    {setup: "Berry!", speechPunchline: "Berry nice to meet you.", cardPunchline: "Berry nice to meet you."}
+    {setup: "angry", speechPunchline: "<audio src=\"https://s3.eu-central-1.amazonaws.com/myalexasoundlibrary/angryOK.mp3\"/> Oh no, I'm soo mad.",
+        cardPunchline: "Small box."}   
 ];
 
 /**
@@ -119,18 +104,18 @@ WiseGuySkill.prototype.intentHandlers = {
 
         switch (session.attributes.stage) {
             case 0:
-                speechText = "Knock knock jokes are a fun call and response type of joke. " +
-                    "To start the joke, just ask by saying tell me a joke, or you can say exit.";
+                speechText = "Hello doctor Guido, I'm your digital patient. " +
+                    "To start my therapy, please ask me to sit down.";
                 break;
             case 1:
-                speechText = "You can ask, who's there, or you can say exit.";
+                speechText = "Thank you for seeing me doctor Guido. Please ask me how I feel.";
                 break;
             case 2:
-                speechText = "You can ask, who, or you can say exit.";
+                speechText = "Please ask me why I am feeling the way I do.";
                 break;
             default:
-                speechText = "Knock knock jokes are a fun call and response type of joke. " +
-                    "To start the joke, just ask by saying tell me a joke, or you can say exit.";
+                speechText = "Hello doctor Guido, I'm your digital patient. " +
+                    "To start my therapy, please ask me to sit down.";
         }
 
         var speechOutput = {
@@ -146,7 +131,7 @@ WiseGuySkill.prototype.intentHandlers = {
     },
 
     "AMAZON.StopIntent": function (intent, session, response) {
-        var speechOutput = "Goodbye";
+        var speechOutput = "Goodbye doctor Guido, thank you for trying to help me";
         response.tell(speechOutput);
     },
 
@@ -163,7 +148,7 @@ function handleTellMeAJokeIntent(session, response) {
     var speechText = "";
 
     //Reprompt speech will be triggered if the user doesn't respond.
-    var repromptText = "You can ask, who's there";
+    var repromptText = "Hello doctor Guido, I'm your digital patient. To start my therapy, please ask me to sit down.";
 
     //Check if session variables are already initialized.
     if (session.attributes.stage) {
@@ -171,12 +156,11 @@ function handleTellMeAJokeIntent(session, response) {
         //Ensure the dialogue is on the correct stage.
         if (session.attributes.stage === 0) {
             //The joke is already initialized, this function has no more work.
-            speechText = "knock knock!";
+            speechText = "Hello Doctor Guido. I have this problem. Can you please ask me how I am feeling?";
         } else {
             //The user attempted to jump to the intent of another stage.
             session.attributes.stage = 0;
-            speechText = "That's not how knock knock jokes work! "
-                + "knock knock";
+            speechText = "No doctor Guido. I'm not here to listen to you're strange answers. I pay you. Please ask me how I'm feeling.";
         }
     } else {
         //Select a random joke and store it in the session variables.
@@ -189,7 +173,7 @@ function handleTellMeAJokeIntent(session, response) {
         session.attributes.speechPunchline = JOKE_LIST[jokeID].speechPunchline;
         session.attributes.cardPunchline = JOKE_LIST[jokeID].cardPunchline;
 
-        speechText = "Knock knock!";
+        speechText = "Hello doctor Guido. Can you please help me getting better?!";
     }
 
     var speechOutput = {
@@ -218,21 +202,21 @@ function handleWhosThereIntent(session, response) {
             //Advance the stage of the dialogue.
             session.attributes.stage = 2;
 
-            repromptText = "You can ask, " + speechText + " who?";
+            repromptText = "You can ask me why I am feeling, " + speechText;
         } else {
             session.attributes.stage = 1;
-            speechText = "That's not how knock knock jokes work! <break time=\"0.3s\" /> "
-                + "knock knock";
+            speechText = "That's not how digital therapy works! <break time=\"0.5s\" /> "
+                + "please be serious!";
 
-            repromptText = "You can ask, who's there."
+            repromptText = "You can ask me why I am feeling, " +speechText;
         }
     } else {
 
         //If the session attributes are not found, the joke must restart. 
-        speechText = "Sorry, I couldn't correctly retrieve the joke. "
-            + "You can say, tell me a joke";
+        speechText = "Sorry, I am confused. I'm here with a problem. "
+            + "You can ask me what my problem is";
 
-        repromptText = "You can say, tell me a joke";
+        repromptText = "I am getting desperate. Doctors are crooks. They ask you things that do not help. Ask me about my issues please!";
     }
 
     var speechOutput = {
@@ -265,16 +249,14 @@ function handleSetupNameWhoIntent(session, response) {
                 type: AlexaSkill.speechOutputType.SSML
             };
             //If the joke completes successfully, this function uses a "tell" response.
-            response.tellWithCard(speechOutput, "Wise Guy", cardOutput);
+            response.tellWithCard(speechOutput, "Doctor Guido", cardOutput);
         } else {
 
             session.attributes.stage = 1;
-            speechText = "That's not how knock knock jokes work! <break time=\"0.3s\" /> "
-                + "Knock knock!";
-            cardOutput = "That's not how knock knock jokes work! "
-                + "Knock knock!";
+            speechText = "Doctor Guido, I am really starting to hate you. Go kill yourself!";
+            cardOutput = "Doctor Guido, I am really starting to hate you. Go kill yourself!";
 
-            repromptText = "You can ask who's there.";
+            repromptText = "Please, please help me! Ask me why!";
 
             speechOutput = {
                 speech: speechText,

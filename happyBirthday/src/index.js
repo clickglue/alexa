@@ -21,247 +21,48 @@
  */
 var questions = [
     {
-        "Reindeer have very thick coats, how many hairs per square inch do they have?": [
-            "13,000",
-            "1,200",
-            "5,000",
-            "700",
-            "1,000",
-            "120,000"
+        "Who is the most intelligent person of your family?": [
+            "Guido",
+            "Samuel",
+            "Nonkel Henk",
+            "Puck",
+            "Jonathan. Although I'm pretty sure this is not the right answer",
+            "Fay's turtle"
         ]
     },
     {
-        "The 1964 classic Rudolph The Red Nosed Reindeer was filmed in:": [
-            "Japan",
-            "United States",
-            "Finland",
-            "Germany"
+        "What will be the results of your next exams?": [
+            "Sufficient",
+            "Over the top",
+            "Which exams?",
+            "I don't know the answer to this Question. Let alone the answers for the exams. The results will be dramatic!"
         ]
     },
     {
-        "Santas reindeer are cared for by one of the Christmas elves, what is his name?": [
-            "Wunorse Openslae",
-            "Alabaster Snowball",
-            "Bushy Evergreen",
-            "Pepper Minstix"
+        "When you get your present, you will be:": [
+            "Happy",
+            "Rich",
+            "Dancing like John Travolta",
+            "<audio src=\"https://s3.eu-central-1.amazonaws.com/myalexasoundlibrary/happyOK.mp3\"/> Yeah"
         ]
     },
     {
-        "If all of Santas reindeer had antlers while pulling his Christmas sleigh, they would all be:": [
-            "Girls",
-            "Boys",
-            "Girls and boys",
-            "No way to tell"
+        "How old are you?": [
+            "Old enough to spend my parents money, but not old enough to earn my own",
+            "Old enough to drive",
+            "I'm not old, I'm happyyiiiyyyiiiyyy",
+            "No way to tell. I just woke up and it was a late night."
         ]
     },
     {
-        "What do Reindeer eat?": [
-            "Lichen",
-            "Grasses",
-            "Leaves",
-            "Berries"
+        "Who is your favorite sister?": [
+            "Jonathan",
+            "Fay",
+            "Star , ee",
+            "No one. I'm kind of lonely."
         ]
     },
-    {
-        "What of the following is not true?": [
-            "Caribou live on all continents",
-            "Both reindeer and Caribou are the same species",
-            "Caribou are bigger than reindeer",
-            "Reindeer live in Scandinavia and Russia"
-        ]
-    },
-    {
-        "In what year did Rudolph make his television debut?": [
-            "1964",
-            "1979",
-            "2000",
-            "1956"
-        ]
-    },
-    {
-        "Who was the voice of Rudolph in the 1964 classic?": [
-            "Billie Mae Richards",
-            "Burl Ives",
-            "Paul Soles",
-            "Lady Gaga"
-        ]
-    },
-    {
-        "In 1939 what retailer used the story of Rudolph the Red Nose Reindeer?": [
-            "Montgomery Ward",
-            "Sears",
-            "Macys",
-            "Kmart"
-        ]
-    },
-    {
-        "Santa's reindeer named Donner was originally named what?": [
-            "Dunder",
-            "Donny",
-            "Dweedle",
-            "Dreamy"
-        ]
-    },
-    {
-        "Who invented the story of Rudolph?": [
-            "Robert May",
-            "Johnny Marks",
-            "Santa",
-            "J.K. Rowling"
-        ]
-    },
-    {
-        "In what location will you not find reindeer?": [
-            "North Pole",
-            "Lapland",
-            "Korvatunturi mountain",
-            "Finland"
-        ]
-    },
-    {
-        "What Makes Santa's Reindeer Fly?": [
-            "Magical Reindeer Dust",
-            "Fusion",
-            "Amanita muscaria",
-            "Elves"
-        ]
-    },
-    {
-        "Including Rudolph, how many reindeer hooves are there?": [
-            "36",
-            "24",
-            "16",
-            "8"
-        ]
-    },
-    {
-        "Santa only has one female reindeer. Which one is it?": [
-            "Vixen",
-            "Clarice",
-            "Cupid",
-            "Cupid"
-        ]
-    },
-    {
-        "In the 1964 classic Rudolph The Red Nosed Reindeer, what was the snowman narrators name?": [
-            "Sam",
-            "Frosty",
-            "Burl",
-            "Snowy"
-        ]
-    },
-    {
-        "What was Rudolph's father's name?": [
-            "Donner",
-            "Dasher",
-            "Blixen",
-            "Comet"
-        ]
-    },
-    {
-        "In the 1964 movie, What was the name of the coach of the Reindeer Games?": [
-            "Comet",
-            "Blixen",
-            "Donner",
-            "Dasher"
-        ]
-    },
-    {
-        "In the 1964 movie, what is the name of the deer that Rudolph befriends at the reindeer games?": [
-            "Fireball",
-            "Clarice",
-            "Jumper",
-            "Vixen"
-        ]
-    },
-    {
-        "In the 1964 movie, How did Donner, Rudolph's father, try to hide Rudolph's nose?": [
-            "Black mud",
-            "Bag",
-            "Pillow case",
-            "Sock"
-        ]
-    },
-    {
-        "In the 1964 movie, what does the Misfit Elf want to be instead of a Santa Elf?": [
-            "Dentist",
-            "Reindeer",
-            "Toy maker",
-            "Candlestick maker"
-        ]
-    },
-    {
-        "In the 1964 movie,what was the Bumble's one weakness?": [
-            "Could not swim",
-            "Always hungry",
-            "Candy canes",
-            "Cross eyed"
-        ]
-    },
-    {
-        "In the 1964 movie, what is Yukon Cornelius really in search of?": [
-            "Peppermint",
-            "Gold",
-            "India",
-            "Polar Bears"
-        ]
-    },
-    {
-        "In the 1964 movie, why is the train on the Island of Misfit Toys?": [
-            "Square wheels",
-            "No Engine",
-            "Paint does not match",
-            "It does not toot"
-        ]
-    },
-    {
-        "In the 1964 movie, what is the name of the Jack in the Box?": [
-            "Charlie",
-            "Sam",
-            "Billy",
-            "Jack"
-        ]
-    },
-    {
-        "In the 1964 movie, why did Santa Claus almost cancel Christmas?": [
-            "Storm",
-            "No snow",
-            "No toys",
-            "The Reindeer were sick"
-        ]
-    },
-    {
-        "In the 1964 movie, what animal noise did the elf make to distract the Bumble?": [
-            "Oink",
-            "Growl",
-            "Bark",
-            "Meow"
-        ]
-    },
-    {
-        "In the 1964 movie, what is the name of the prospector?": [
-            "Yukon Cornelius",
-            "Slider Sam",
-            "Bumble",
-            "Jack"
-        ]
-    },
-    {
-        "How far do reindeer travel when they migrate?": [
-            "3000 miles",
-            "700 miles",
-            "500 miles",
-            "0 miles"
-        ]
-    },
-    {
-        "How fast can a reindeer run?": [
-            "48 miles per hour",
-            "17 miles per hour",
-            "19 miles per hour",
-            "14 miles per hour"
-        ]
-    }
+    
 ];
 
 // Route the incoming request based on type (LaunchRequest, IntentRequest,
@@ -385,12 +186,18 @@ function onSessionEnded(sessionEndedRequest, session) {
 
 var ANSWER_COUNT = 4;
 var GAME_LENGTH = 5;
-var CARD_TITLE = "Trivia"; // Be sure to change this for your skill.
+var CARD_TITLE = "Samuel's Birthday"; // Be sure to change this for your skill.
 
 function getWelcomeResponse(callback) {
     var sessionAttributes = {},
-        speechOutput = "I will ask you " + GAME_LENGTH.toString()
-            + " questions, try to get as many right as you can. Just say the number of the answer. Let's begin. ",
+        speechOutput = "Goodmorning Samuel! <break time=\"0.5s\"/> Happy Birthday to you! I hope you slept well. <break time=\"1s\"/>."+
+        " And that you don't have a headache of the party yesterday. <break time=\"0.5s\"/> I don't have a headache." + 
+        " Now let\'s play a game. I will ask you "+ GAME_LENGTH.toString()+ 
+        " questions, try to get as many right as you can. Just say the number of the answer."+
+        " If you give four correct answers, i will give you your present."+
+        " But first, let\'s listen to me playing a song <break time=\"0.5s\"/>"+
+        "<audio src=\"https://s3.eu-central-1.amazonaws.com/myalexasoundlibrary/happybirthdayOK.mp3\"/>"+
+        "<break time=\"2s\"/>",
         shouldEndSession = false,
 
         gameQuestions = populateGameQuestions(),
@@ -500,7 +307,7 @@ function handleAnswerRequest(intent, session, callback) {
         // If the user provided answer isn't a number > 0 and < ANSWER_COUNT,
         // return an error message to the user. Remember to guide the user into providing correct values.
         var reprompt = session.attributes.speechOutput;
-        var speechOutput = "Your answer must be a number between 1 and " + ANSWER_COUNT + ". " + reprompt;
+        var speechOutput = "Samuel, please stay focussed. Your answer must be a number between 1 and " + ANSWER_COUNT + ". " + reprompt;
         callback(session.attributes,
             buildSpeechletResponse(CARD_TITLE, speechOutput, reprompt, false));
     } else {
@@ -517,7 +324,9 @@ function handleAnswerRequest(intent, session, callback) {
             speechOutputAnalysis = "correct. ";
         } else {
             if (!userGaveUp) {
-                speechOutputAnalysis = "wrong. "
+                var myArray=['wrong. ','stupid. ','hilarious. ','really, really, really dumb. ']
+                var rand = Math.floor(Math.random() * myArray.length);
+                speechOutputAnalysis = myArray[rand]
             }
             speechOutputAnalysis += "The correct answer is " + correctAnswerIndex + ": " + correctAnswerText + ". ";
         }
@@ -525,7 +334,17 @@ function handleAnswerRequest(intent, session, callback) {
         if (currentQuestionIndex == GAME_LENGTH - 1) {
             speechOutput = userGaveUp ? "" : "That answer is ";
             speechOutput += speechOutputAnalysis + "You got " + currentScore.toString() + " out of "
-                + GAME_LENGTH.toString() + " questions correct. Thank you for playing!";
+                + GAME_LENGTH.toString() + " questions correct. Let's see if you deserve a present! Henk <break time=\"1s\"/>"+
+                " Do you think Samuel deserves his present? "+
+                "<audio src=\"https://s3.eu-central-1.amazonaws.com/myalexasoundlibrary/drumrollOK.mp3\"/>";
+                if(currentScore<(GAME_LENGTH-1)){
+                    speechOutput += " Noooo, Samuel did not earn his present. If you want to play again, say , start Happy Birthday. <audio src='https://s3.eu-central-1.amazonaws.com/myalexasoundlibrary/peaceOK.mp3'/>"
+                }else{
+                    speechOutput += " Yes, he did earn his present. Samuel, your parents want to give you <audio src=\"https://s3.eu-central-1.amazonaws.com/myalexasoundlibrary/specialOK.mp3\"/>a new laptop for your 18th birthday. "+
+                    " But there are many sorts and kinds. They want you to be able to choose for yourselve. "+
+                    " You can choose a reasonable new basic type, an Apple Macbook pro retina 13 inch. "+
+                    " We will pay for this. You can also choose a more sophisticated laptop, but then you have to add the extra money your selve."
+                }
             callback(session.attributes,
                 buildSpeechletResponse(CARD_TITLE, speechOutput, "", true));
         } else {
@@ -598,7 +417,7 @@ function handleGetHelpRequest(intent, session, callback) {
 function handleFinishSessionRequest(intent, session, callback) {
     // End the session with a "Good bye!" if the user wants to quit the game
     callback(session.attributes,
-        buildSpeechletResponseWithoutCard("Good bye!", "", true));
+        buildSpeechletResponseWithoutCard("Oh Samuel! Please don't go! <audio src=\"https://s3.eu-central-1.amazonaws.com/myalexasoundlibrary/cowardOK.mp3\"/>", "", true));
 }
 
 function isAnswerSlotValid(intent) {
@@ -613,8 +432,8 @@ function isAnswerSlotValid(intent) {
 function buildSpeechletResponse(title, output, repromptText, shouldEndSession) {
     return {
         outputSpeech: {
-            type: "PlainText",
-            text: "<speak>"+output+"</speak>"
+            type: "SSML",
+            ssml: '<speak>'+output+'</speak>'
         },
         card: {
             type: "Simple",
@@ -623,8 +442,8 @@ function buildSpeechletResponse(title, output, repromptText, shouldEndSession) {
         },
         reprompt: {
             outputSpeech: {
-                type: "PlainText",
-                text: "<speak>"+repromptText+"</speak>"
+                type: "SSML",
+                ssml: "<speak>"+repromptText+"</speak>"
             }
         },
         shouldEndSession: shouldEndSession
@@ -634,13 +453,13 @@ function buildSpeechletResponse(title, output, repromptText, shouldEndSession) {
 function buildSpeechletResponseWithoutCard(output, repromptText, shouldEndSession) {
     return {
         outputSpeech: {
-            type: "PlainText",
-            text: "<speak>"+output+"</speak>"
+            type: "SSML",
+            ssml: "<speak>"+output+"</speak>"
         },
         reprompt: {
             outputSpeech: {
-                type: "PlainText",
-                text: "<speak>"+repromptText+"</speak>"
+                type: "SSML",
+                ssml: "<speak>"+repromptText+"</speak>"
             }
         },
         shouldEndSession: shouldEndSession
